@@ -2,7 +2,7 @@
 
 /*color for background and text*/
 body {
-    background-color: #0d1a26; 
+    background-color: #0a192f; 
 }
 #intro h1{
     color: #ffffff;
@@ -16,7 +16,7 @@ font-family: "Poppins", sans-serif;
     font-weight: 600;
   }
 
-  
+
   .avatar {
     width: 180px;
     aspect-ratio: 1 / 1;   
@@ -37,14 +37,24 @@ font-family: "Poppins", sans-serif;
 .nav {
   display: flex;
   gap: 1.5rem;
+  color: green;
+  margin-top:25px;
+
   
 }
 
 .nav a{
-  font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
+  font-family: "Martian Mono", monospace;
+  font-size: 0.65rem;
   font-weight: 500;
   letter-spacing: 0.5px;
+  color:white;
+  text-decoration: none;
+  
+}
+
+.nav a:hover{
+  color: #64ffda;
 }
 
 .topbar {
@@ -52,7 +62,7 @@ font-family: "Poppins", sans-serif;
   justify-content:flex-end;
   align-items: center;
   padding: 0 2rem;
-  background: #000d33;
+  background: #0a192f;
 
 
 }
@@ -87,12 +97,14 @@ font-family: "Poppins", sans-serif;
   line-height:1;
   color:#ffffff;
   margin:0;
-
+  
 }
 
 #intro{
   display:flex;                 
   align-items:center;           
   justify-content:center;    
-  padding-right:10%;            
+  padding-right:10%;   
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
