@@ -25,13 +25,13 @@ body {
   }
 
   .avatar {
-    width: 300px;
+    width: 260px;
     aspect-ratio: 1 / 1;   
     border-radius: 50%;
     overflow: hidden;     
-    height: 300px; 
-    margin-top:80px;
-    margin-left:1000px;
+    height: 260px; 
+    margin-top:35px;
+    margin-left:2rem;
   }
   .avatar img {
     width: 100%;
@@ -90,16 +90,38 @@ body {
   display:flex;
   flex-direction:column;
   align-items:flex-start;    
+  min-width:300px;
+  
 }
 
 
 .tagline{
-  font-size:1.25rem;         
-  font-weight:400;
-  text-transform:uppercase;
+  white-space: nowrap;
+  font-size:1rem;         
+  font-weight:50;
   letter-spacing:2px;
-  margin-bottom:0.5rem;
-  color:#f0f0f0;
+  color: #64ffda;
+  font-family: "Martian Mono", monospace;
+  margin: 0;
+}
+
+.typing{
+  font-family: "Martian Mono", monospace;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #64ffda;
+  width: 0;
+  animation: typing 2s steps(20, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from{width: 0}
+  to{width:20ch}
+}
+
+@keyframes blink{
+  50% {border-color: transparent}
 }
 
 
@@ -109,25 +131,42 @@ body {
   line-height:1;
   color:#ffffff;
   margin:0;
+  font-family: "Poppins", sans-serif;
   
 }
 
 .avatar-text{
   display:flex;
   flex-direction: column;
-  align-items: center;
-  gap:1rem;
+  align-items: flex-start;
+  
   
 }
 
 .avatar-title{
   font-size: 3rem;
   font-weight: 500;
-  color: #ffffff;
+  color: #ccd6f6;
   font-family: "Poppins", sans-serif;
-  margin-top: 0px;
+ margin: 0;
+}
 
+.avatar-row{
+  display:flex;
+  align-items: flex;
+  gap:2rem;
+  margin-left:18rem;
+  margin-top:3rem;
+}
 
+.bio{
+  font: size 0.9rem;
+  font-weight:300;
+  color: #a8b2d1;
+  font-family: "Poppins", sans-serif;
+  margin-top:1rem;
+  max-width:400px;
+  line-height:1.6;
 }
 
 #intro{
