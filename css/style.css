@@ -177,3 +177,20 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
+
+.icon-links {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.icon-link {
+  font-size: 1.5rem;
+  color: #64ffda;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  color: #ffffff;
+}
