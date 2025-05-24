@@ -1,27 +1,37 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0;
+   padding: 0; 
+   box-sizing: border-box; 
+  }
 
-/*color for background and text*/
+:root {
+  --bar-height: 64px;
+  --bar-bg: #0a192f
+}
+
 body {
     background-color: #0a192f; 
 }
+
 #intro h1{
     color: #ffffff;
-    font: size 5rem; 
-
-font-family: "Poppins", sans-serif;
-  font-weight: 600;
+    font-size: 5rem; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
 }
+
 .poppins-semibold {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
   }
 
-
   .avatar {
-    width: 180px;
+    width: 300px;
     aspect-ratio: 1 / 1;   
     border-radius: 50%;
-    overflow: hidden;      
+    overflow: hidden;     
+    height: 300px; 
+    margin-top:80px;
+    margin-left:1000px;
   }
   .avatar img {
     width: 100%;
@@ -29,23 +39,21 @@ font-family: "Poppins", sans-serif;
     object-fit: cover;
   }
 
-:root {
-  --bar-height: 64px;
-  --bar-bg: #
-}
+
 
 .nav {
   display: flex;
   gap: 1.5rem;
   color: green;
   margin-top:25px;
+  margin-right:65px;
 
   
 }
 
 .nav a{
   font-family: "Martian Mono", monospace;
-  font-size: 0.65rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.5px;
   color:white;
@@ -61,7 +69,7 @@ font-family: "Poppins", sans-serif;
   display: flex;
   justify-content:flex-end;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0.85rem;
   background: #0a192f;
 
 
@@ -69,8 +77,12 @@ font-family: "Poppins", sans-serif;
 
 .hero{
   display:flex;
-  align-items:center;        
-  gap:3rem;                  
+  align-items:center;    
+  justify-content: space-between;    
+  gap:3rem;  
+  width: 100%;
+  padding-top:100px;
+  max-width: 1200px;                
 }
 
 /* text column */
@@ -98,6 +110,24 @@ font-family: "Poppins", sans-serif;
   color:#ffffff;
   margin:0;
   
+}
+
+.avatar-text{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:1rem;
+  
+}
+
+.avatar-title{
+  font-size: 3rem;
+  font-weight: 500;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin-top: 0px;
+
+
 }
 
 #intro{
